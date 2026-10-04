@@ -87,3 +87,22 @@ fn numeric_operator(){
     println!("a = {}, b = {}, c = {}", a, b, c);
     println!("d = {}, e = {}, f = {}", d, e, f);
 }
+
+#[test]
+fn augmented_operator(){
+    let mut  a = 10;
+    println!("{}", a);
+
+    a += 10;
+    println!("{}", a);
+
+    a -= 10;
+    println!("{}", a);
+}
+
+#[test]
+fn boolean_operator(){
+    let a = true;
+    let b: bool = false;
+    println!("a = {}, b = {}", a, b);
+}
